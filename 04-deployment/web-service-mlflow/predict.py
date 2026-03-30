@@ -5,7 +5,7 @@ import mlflow
 from flask import Flask, request, jsonify
 
 
-RUN_ID = os.getenv('RUN_ID')
+RUN_ID = os.getenv('RUN_ID')   # RUN_ID tanımlanır s3 bucketi gönderdiğimiz mlflow server --backend-store-uri=sqlite:///mlflow.db --default-artifact-root=s3://mlflow-models-alexey/ komuttan gelecek ıd numarası
 
 logged_model = f's3://mlflow-models-alexey/1/{RUN_ID}/artifacts/model'
 # logged_model = f'runs:/{RUN_ID}/model'
