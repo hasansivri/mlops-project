@@ -1,0 +1,8 @@
+ubuntu@ip: /mlops-project/tree/main/04-deployment/batch $ cp ../web-service-mlflow/random-forest.ipynb 
+ubuntu@ip: /mlops-project/tree/main/04-deployment/batch $  jupyter nbconvert --to script score.ipyn
+ubuntu@ip: /mlops-project/tree/main/04-deployment/batch $ rm output/green/*
+ubuntu@ip: /mlops-project/tree/main/04-deployment/batch $ ls output/green/
+ubuntu@ip: /mlops-project/tree/main/04-deployment/batch $ ls
+ubuntu@ip: /mlops-project/tree/main/04-deployment/batch $ python score.py green 2021 4
+ubuntu@ip: /mlops-project/tree/main/04-deployment/batch $ python score.py green 2021 4 e1efc53e9bd149078b0c12aeaa6365df
+ubuntu@ip: /mlops-project/tree/main/04-deployment/batch $ python score.py green 2021 5 e1efc53e9bd149078b0c12aeaa6365df
